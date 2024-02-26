@@ -6,7 +6,7 @@ export default function App() {
   const [data,setData]=useState('');
   function handleClick(val){
     if(val==='='){
-      setData(eval(data));
+      setData(eval(data)+'');
     }else if(val==='Clear'){
       setData("");
     }else if(val==='<x'){
